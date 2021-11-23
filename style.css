@@ -1,0 +1,43 @@
+.grass {
+    background-color: green;
+    background-image: url('./assets/grass.png');
+    background-size: 34px 44px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+.wrapper {
+    background-color: green;
+    padding: 15px;
+    border-radius: 10px;
+}
+.holes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    gap: 10px;
+}
+.hole {
+    display: inline-block;
+    background: url('./assets/hole.png');
+    background-repeat: no-repeat;
+    background-size: 40px 41px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.hole.occupied {
+    background-image: url('./assets//mole.png');
+}
+.counter {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
